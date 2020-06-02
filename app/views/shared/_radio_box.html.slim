@@ -1,0 +1,17 @@
+/* Required parameters:
+ *   name: ''
+ *   radios: [{ id: '', value: '', text: '' }]
+ */
+
+- name = local_assigns[:name] ? name : ''
+- radios = local_assigns[:radios] ? radios : []
+
+- radios.each_with_index do |radio, i|
+  = radio_button_tag name,
+    radio[:value],
+    radio[:checked],
+    class: 'radio-col-cyan',
+    id: radio[:id],
+    disabled: radio[:disabled],
+    data: radio[:opts]
+  label for=radio[:id] = radio[:text]

@@ -1,0 +1,24 @@
+/! Topbar header - style you can find in pages.scss
+header.topbar
+  nav.navbar.top-navbar.navbar-expand-md.navbar-light
+    /! Logo
+    .navbar-header
+      a.navbar-brand href="/" tppabs="https://wrappixel.com/demos/admin-templates/material-pro/material/index.html" 
+        /! Logo icon
+        b
+          /! You can put here icon as well // <i class="wi wi-sunset"></i> //
+          /! Dark Logo icon
+          / img.dark-logo alt="homepage" src="../assets/images/logo-icon.png" /
+          /! Light Logo icon
+          / img.light-logo alt="homepage" src="../assets/images/logo-light-icon.png" /
+          = image_tag nil, width: 45, class: 'light-logo'
+        span.inline-block.ml10 Logo
+    .navbar-collapse
+      ul.navbar-nav.mr-auto.mt-md-0
+        li.nav-item
+          a.nav-link.nav-toggler.hidden-md-up.text-muted.waves-effect.waves-dark href="javascript:void(0)" 
+            i.mdi.mdi-menu
+        li.nav-item
+          a.nav-link.sidebartoggler.hidden-sm-down.text-muted.waves-effect.waves-dark href="javascript:void(0)" 
+            i.ti-menu
+

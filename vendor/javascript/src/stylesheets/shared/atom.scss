@@ -1,0 +1,28 @@
+/* Atom classes */
+.psr { position: relative; }
+
+.fll { float: left; }
+.flr { float: right; }
+.flx { display: flex; }
+.inflx { display: inline-flex; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+.m0 { margin: 0; }
+.ml3 { margin-left: 3px; }
+.ml5 { margin-left: 5px; }
+.ml10 { margin-left: 10px; }
+.ml15 { margin-left: 15px; }
+.mr15 { margin-right: 15px; }
+.mr3 { margin-right: 3px; }
+.mr10 { margin-right: 10px; }
+.mt3 { margin-top: 3px; }
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mb5 { margin-bottom: 5px; }
+.mb10 { margin-bottom: 10px; }
+.mb20 { margin-bottom: 20px; }
+.p0 { padding: 0; }
+.pl5 { padding-left: 5px; }
+
+.vertical-center { vertical-align: middle; }

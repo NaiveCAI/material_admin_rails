@@ -1,0 +1,33 @@
+doctype html
+html xmlns:wb="http://open.weibo.com/wb"
+  head
+    title
+      | Beebeego - Admin Panel
+    meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    = csp_meta_tag
+    = csrf_meta_tags
+    = javascript_pack_tag 'admin', 'data-turbolinks-track': 'reload'
+    = stylesheet_pack_tag 'admin_style', media: 'all', 'data-turbolinks-track': 'reload'
+
+  body[
+    id=body_id
+    class="fix-header fix-sidebar card-no-border #{body_class}"
+    data-controller=body_data_controller
+  ]
+    /! Preloader - style you can find in spinners.css
+    // NOTE: Need fix for turbolinks.
+    / .preloader
+    /   svg.circular viewbox=("25 25 50 50") 
+    /     circle.path cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="2" /
+
+    /! Main wrapper - style you can find in pages.scss
+    #main-wrapper
+      = render 'admin/shared/header'
+      = render 'admin/shared/sidebar'
+      
+      .page-wrapper
+        .container-fluid
+          = yield :breadcrumb
+          .row
+            = yield
+

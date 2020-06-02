@@ -1,0 +1,163 @@
+/* sidebar */
+ul#sidebarnav > li > a {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-nav ul.collapse li.active a.active {
+  color: #26c6da;
+}
+
+.sidebar-nav li a span {
+  padding-left: 10px;
+}
+
+/* form */
+[type=checkbox] + label {
+  margin-right: 15px;
+}
+
+[type=radio] + label {
+  margin-right: 15px;
+}
+
+form .form-body .form-group > label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-body .form-group {
+  padding-bottom: 0;
+  margin-bottom: 14px;
+  border-bottom: none;
+}
+
+/* croppie */
+.uploader-box {
+  input[type='file'] {
+    display: none;
+  }
+}
+
+.upload-crop-wrap {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin-left: -425px;
+  background: rgba(31, 144, 150, 0.9);
+  box-shadow: 0px 0px 15px 5px rgba(31, 144, 150, 0.9);
+  z-index: 12; // Need be bigger than trumbowyg-button-pane's z-index.
+
+  .upload-crop-area {
+    margin: 0 auto;
+    display: none;
+
+    .cr-boundary {
+      margin: 0 auto;
+      overflow: hidden;
+
+      .cr-vp-square {
+        right: auto;
+        position: absolute;
+        border: 2px solid white;
+        margin: auto;
+        box-shadow: 0 0 2000px 2000px rgba(0, 0, 0, 0.5);
+      }
+
+      .cr-overlay {
+        /* Must be set to absolute otherwise we can not move the image. */
+        position: absolute;
+      }
+    }
+  }
+
+  &.ready {
+    display: block;
+
+    .upload-crop-area {
+      display: block;
+    }
+  }
+j
+  .btn-wrapper {
+    position: relative;
+    text-align: right;
+    margin: 5px 0;
+    z-index: 999;
+
+    .btn {
+      color: cadetblue;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      color: #b0f7f7;
+    }
+
+    .btn:active {
+      box-shadow: none;
+    }
+  }
+}
+
+img.img-preview {
+  display: block;
+  margin-top: 5px;
+}
+
+
+/* select2 */
+.select2-container {
+  width: 100% !important;
+}
+
+
+/* Withdrawal applications page */
+.wa-detail {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-default .journal-box {
+  text-align: right;
+}
+
+
+/* Coaching Item form page */
+.items-list {
+  width: 100%;
+  max-height: 160px;
+  overflow-y: scroll;
+  padding: 15px 0;
+  overflow: -moz-scrollbars-none; 
+  -ms-overflow-style: none;
+
+  .text-info {
+    padding-left: 15px;
+  }
+
+  .item {
+    span {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.cr-viewport.cr-vp-square {
+  top: 0 !important;
+}
+
+.upload-crop-area + .btn-wrapper {
+  text-align: center;
+}
+
+.card-header {
+  padding-bottom: 0;
+}

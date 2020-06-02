@@ -1,0 +1,23 @@
+/! ==============================================================
+/! Left Sidebar - style you can find in sidebar.scss
+/! ==============================================================
+aside.left-sidebar
+  /! Sidebar scroll
+  .scroll-sidebar
+    /! Sidebar navigation
+    nav.sidebar-nav
+      ul#sidebarnav
+        / li.nav-small-cap CoachingHelper
+        li
+          = link_to '#' do
+            i.fa.fa-user
+            span.hide-menu Menu
+
+  /! Bottom points
+  .sidebar-footer
+    / a.link data-toggle="tooltip" href="" title="Settings"
+    /   i.ti-settings
+    / a.link data-toggle="tooltip" href="" title="Email"
+    /   i.mdi.mdi-gmail
+    a.link data-toggle="tooltip" href=destroy_admin_session_path title="Logout" data-method="DELETE"
+      i.mdi.mdi-power

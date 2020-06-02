@@ -1,0 +1,22 @@
+- title   = local_assigns[:title] ? title : []
+- links   = local_assigns[:links] ? links : []
+- buttons = local_assigns[:buttons] ? buttons : []
+- data_options = local_assigns[:data_options] ? options : {}
+
+.row.page-titles
+  .col-md-6.col-8.align-self-center
+    h3.text-themecolor.m-b-0.m-t-0 = title
+    ol.breadcrumb
+      - links.each do |ele|
+        li.breadcrumb-item
+          - if ele[:link]
+            = link_to ele[:text], ele[:link]
+          - else
+            span = ele[:text]
+
+  .col-md-6.col-4.align-self-center.text-right
+    - buttons.each do |btn|
+      = link_to btn[:link], id: btn[:id], class: btn[:class], data: btn[:data_options] do
+        - if btn[:icon]
+          i class="fa fa-#{btn[:icon]}"
+        span.ml5 = btn[:text]
