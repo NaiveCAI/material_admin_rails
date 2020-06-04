@@ -1,0 +1,30 @@
+section#wrapper
+  .login-register
+    .login-box.card
+      .card-body
+        = form_for resource,
+          as: resource_name,
+          url: session_path(resource_name),
+          html: { class: 'form-horizontal form-material' } do |f|
+
+          h3.box-title.m-b-20 Sign In
+
+          .form-group
+            .col-xs-12
+              = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control'
+
+          .form-group
+            .col-xs-12
+              = f.password_field :password, autocomplete: "current-password", class: 'form-control'
+
+          - if devise_mapping.rememberable?
+            .form-group
+              .d-flex.no-block.align-items-center
+                .checkbox.checkbox-primary.p-t-0
+                  = f.check_box :remember_me
+                  = f.label :remember_me
+
+          .form-group.text-center.m-t-20
+            .col-xs-12
+              = f.submit "Log in", class: 'btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light'
+

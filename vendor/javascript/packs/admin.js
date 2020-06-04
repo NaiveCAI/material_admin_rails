@@ -20,6 +20,6 @@ Rails.start();
 Turbolinks.start();
 
 const application = Application.start()
-const context = require.context("../src/javascripts/admin/controllers/", true, /\.js$/)
+// const context = require.context("../src/javascripts/admin/controllers/", true, /\.js$/)
 
-application.load(definitionsFromContext(context))
+// application.load(definitionsFromContext(context))
