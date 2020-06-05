@@ -142,6 +142,8 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
 
         class #{layout_name.camelize}::BaseController < ActionController::Base
           layout '#{layout_name}'
+
+          before_action :authenticate_#{layout_name}!
         end
       dashboard_controller
     end
