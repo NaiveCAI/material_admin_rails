@@ -1,7 +1,13 @@
 # MaterialAdmin
-Short description and motivation.
+Use rails webpacker to bundle the material admin template.
 
-## Used js libs
+https://www.wrappixel.com/demos/admin-templates/material-pro/Documentation/document.html
+
+Easily install and set up admin quickly
+
+## Prerequisite
+- Need set up your db first
+- Used js libraries
 ```json
 {
   "name": "beebeego-back",
@@ -28,10 +34,9 @@ Short description and motivation.
 }
 ```
 
-## Usage
-How to use my plugin.
 
-## Installation
+## Usage
+### Installation
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -43,10 +48,16 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
-```bash
-$ gem install material_admin
+### Init an admin template
 ```
+rails generate material_admin [layout_name]
+```
+
+### Init a simple users CRUD template
+```
+rails generate crud user --options layout_name:[layout_name]
+```
+
 
 ## Contributing
 Contribution directions go here.
