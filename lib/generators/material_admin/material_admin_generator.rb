@@ -3,7 +3,7 @@
 class MaterialAdminGenerator < Rails::Generators::NamedBase
   include Rails::Generators::Actions
 
-  GEM_NAME = 'material_admin'
+  GEM_NAME = 'rails_material_admin'
   GEM_PATH = Gem.loaded_specs[GEM_NAME].full_gem_path
   JS_PKGS  =
     'datatables.net-bs4 datatables.net-responsive-bs4'\
