@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.homepage    = 'https://github.com/NaiveCAI/material_admin_rails'
   spec.license     = 'MIT'
 
-  spec.files = Dir['{app,config,db,lib,vendor}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  spec.files = Dir['{app,config,db,lib,vendor}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md', 'package.json']
 
   spec.add_dependency 'rails', '>= 6'
 end
