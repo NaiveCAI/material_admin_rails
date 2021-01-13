@@ -10,7 +10,7 @@ Easily install and set up admin quickly
 - Used js libraries
 ```json
 {
-  "name": "beebeego-back",
+  "name": "MyProject",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "5.1.1",
@@ -40,7 +40,7 @@ Easily install and set up admin quickly
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'material_admin'
+gem 'rails_material_admin'
 ```
 
 And then execute:
