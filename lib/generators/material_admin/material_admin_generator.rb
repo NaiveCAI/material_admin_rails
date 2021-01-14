@@ -38,9 +38,9 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
 
     FileUtils.copy_entry("#{GEM_PATH}/vendor/#{GEM_NAME}", "#{webpacker_dir}/vendor/#{GEM_NAME}/")
 
-    p 'Import package.json...'
+    # p 'Import package.json...'
 
-    FileUtils.cp "#{GEM_PATH}/package.json", "#{Rails.root}/package.json"
+    # FileUtils.cp "#{GEM_PATH}/package.json", "#{Rails.root}/package.json"
 
     p 'Import js source files...'
 
@@ -57,6 +57,10 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
       "#{GEM_PATH}/app/helpers/datatables_helper.rb",
       "#{Rails.root}/app/helpers/datatables_helper.rb"
     )
+  end
+
+  def yarn_install
+    system("yarn add #{JS_PKGS}")
   end
 
   def create_helper
@@ -127,10 +131,6 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
     FileUtils.mkdir_p(dest) unless File.directory?(dest)
 
     FileUtils.copy_entry("#{GEM_PATH}/app/views/shared", dest)
-  end
-
-  def yarn_install
-    system("yarn add #{JS_PKGS}")
   end
 
   def create_base_controller
