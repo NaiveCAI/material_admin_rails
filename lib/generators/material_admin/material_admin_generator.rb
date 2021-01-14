@@ -8,7 +8,8 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
   JS_PKGS  =
     'datatables.net-bs4 datatables.net-responsive-bs4'\
     ' expose-loader file-loader url-loader resolve-url-loader'\
-    ' rails-ujs stimulus turbolinks'\
+    ' @rails/ujs @rails/activestorage'\
+    ' stimulus turbolinks'\
     ' jquery popper.js select2'
 
   # TODO: Warning! Add reset project.
