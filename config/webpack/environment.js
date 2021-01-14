@@ -10,7 +10,11 @@ environment.loaders.append('expose-loader', {
   test: require.resolve('jquery'),
   use: [{
     loader: 'expose-loader',
-    options: '$'
+    options: {
+      exposes: {
+        globalName: '$',
+      }
+    }
   }]
 })
 
