@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+}
+
+.topbar .top-navbar .navbar-header .navbar-brand {
+  color: white;
+}
+
+// NOTE: If you want reduce the checkbox border
+// [type='checkbox'] + label:before,
+// [type='checkbox']:not(.filled-in) + label:after {
+//   border: 1px solid #ced4da;
+// }
+
+/* select2 */
+.select2-container {
+  width: 100% !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #ced4da;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border: 1px solid #ced4da;
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  padding-left: 12px;
+}
+
+.select2-search__field {
+  color: #999;
+  font-weight: 300;
+}
+
+// Fix placeholder missing when select is initially hidden.
+.select2-search--inline {
+  /*this will make the container disappear, making the child the one who sets the width of the element*/
+  display: contents;
+}
+.select2-search__field:placeholder-shown {
+  /*makes the placeholder to be 100% of the width while there are no options selected*/
+  width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  font-size: 16px;
+  color: #67757c;
+}
+
