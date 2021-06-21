@@ -144,7 +144,7 @@ class CrudGenerator < Rails::Generators::NamedBase
 
             @total_rows = #{resource}.count
 
-            @rows = users.page(dt[:page]).per(dt[:per_page])
+            @rows = #{resource}.page(dt[:page]).per(dt[:per_page])
             @rows = @rows.order(search_obj[:order])
           end
         end
