@@ -71,6 +71,9 @@ class CrudGenerator < Rails::Generators::NamedBase
 
     create_file "#{Rails.root}/app/views/#{layout_name}/#{resource}/_form.html.slim" do
       <<~html
+        = content_for :error_messages do
+          = render 'admin/shared/error_messages', target: @#{name}
+
         .col-lg-12
           .card
             .card-body
@@ -108,9 +111,6 @@ class CrudGenerator < Rails::Generators::NamedBase
         # frozen_string_literal: true
 
         class #{layout_name.camelize}::#{resource.camelize}Controller < #{layout_name.camelize}::BaseController
-
-          include DatatableDecorator
-
           def index
             respond_to do |format|
               format.html

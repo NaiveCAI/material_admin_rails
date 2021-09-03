@@ -10,7 +10,10 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
     ' expose-loader file-loader url-loader resolve-url-loader'\
     ' @rails/ujs @rails/activestorage'\
     ' stimulus turbolinks'\
-    ' jquery popper.js select2'
+    ' jquery popper.js select2 @popperjs/core'
+  ESLINT_JS_PKGS =
+    'eslint prettier eslint-plugin-prettier eslint-config-prettier'\
+    ' stylelint stylelint-config-prettier stylelint-config-recommended stylelint-scss'
 
   # TODO: Warning! Add reset project.
 
@@ -62,6 +65,7 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
 
   def yarn_install
     system("yarn add #{JS_PKGS}")
+    system("yarn add #{ESLINT_JS_PKGS} --dev")
   end
 
   def create_helper
@@ -143,6 +147,8 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
 
         class #{layout_name.camelize}::BaseController < ActionController::Base
           layout '#{layout_name}'
+
+          include DatatableDecorator
 
           before_action :authenticate_#{layout_name}!
         end

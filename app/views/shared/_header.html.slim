@@ -1,9 +1,11 @@
 /! Topbar header - style you can find in pages.scss
-header.topbar
-  nav.navbar.top-navbar.navbar-expand-md.navbar-light
-    /! Logo
-    .navbar-header
-      a.navbar-brand href="/" tppabs="https://wrappixel.com/demos/admin-templates/material-pro/material/index.html" 
+header.topbar data-navbarbg="skin1"
+  nav.navbar.top-navbar.navbar-expand-md.navbar-dark
+    .navbar-header data-logobg='skin1'
+      a.nav-link.nav-toggler.d-block.d-md-none.text-muted.waves-effect.waves-dark href="javascript:void(0)" 
+        i.mdi.mdi-menu
+
+      a.navbar-brand href="/admin" tppabs="https://wrappixel.com/demos/admin-templates/material-pro/material/index.html" 
         /! Logo icon
         b
           /! You can put here icon as well // <i class="wi wi-sunset"></i> //
@@ -11,14 +13,16 @@ header.topbar
           / img.dark-logo alt="homepage" src="../assets/images/logo-icon.png" /
           /! Light Logo icon
           / img.light-logo alt="homepage" src="../assets/images/logo-light-icon.png" /
-          / = image_tag nil, width: 45, class: 'light-logo'
-        span.inline-block.ml10 Logo
-    .navbar-collapse
-      ul.navbar-nav.mr-auto.mt-md-0
+          = image_tag asset_pack_path('media/images/logo-light-icon.png'), class: 'light-logo'
+        span.logo-text
+          .inline-block.ml10 Logo
+
+      a.topbartoggler.d-block.d-md-none.waves-effect.waves-light href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        i.ti-more
+
+    .navbar-collapse.collapse data-navbarbg="skin1"
+      ul.navbar-nav.me-auto
         li.nav-item
-          a.nav-link.nav-toggler.d-block.d-md-none.text-muted.waves-effect.waves-dark href="javascript:void(0)" 
-            i.mdi.mdi-menu
-        li.nav-item
-          a.nav-link.sidebartoggler.d-none.d-md-block.text-muted.waves-effect.waves-dark href="javascript:void(0)" 
+          a.nav-link.sidebartoggler.d-none.d-md-block.waves-effect.waves-dark href="javascript:void(0)" 
             i.ti-menu
 

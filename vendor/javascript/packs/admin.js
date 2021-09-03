@@ -13,6 +13,12 @@ import 'select2'
 
 import '../vendor/rails_material_admin/material_admin'
 
+import bootstrap from '../vendor/rails_material_admin/js/bootstrap.min'
+window.bootstrap = bootstrap
+
+import Swal from '../vendor/rails_material_admin/js/sweetalert2.min'
+window.Swal = Swal
+
 import '../src/javascripts/lib/utils_datatables.js'
 import '../src/javascripts/admin/common/scaffold.js'
 

@@ -1,30 +1,33 @@
-section#wrapper
-  .login-register
-    .login-box.card
-      .card-body
-        = form_for resource,
-          as: resource_name,
-          url: session_path(resource_name),
-          html: { class: 'form-horizontal form-material' } do |f|
+.auth-wrapper.d-flex.no-block.justify-content-center.align-items-center
+  .auth-box.p-4.bg-white.rounded
+    #loginform
+      .logo
+        h3.box-title.mb-3 Sign In
 
-          h3.box-title.m-b-20 Sign In
+      .row
+        .col-12
+          = form_for resource,
+            as: resource_name,
+            url: session_path(resource_name),
+            html: { class: 'form-horizontal mt-3 form-material', id: 'loginform' } do |f|
 
-          .form-group
-            .col-xs-12
-              = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control'
+            .form-group.mb-3
+              .col-xs-12
+                = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: 'Email'
 
-          .form-group
-            .col-xs-12
-              = f.password_field :password, autocomplete: "current-password", class: 'form-control'
+            .form-group.mb-4
+              .col-xs-12
+                = f.password_field :password, autocomplete: "current-password", class: 'form-control', placeholder: 'Password'
 
-          - if devise_mapping.rememberable?
-            .form-group
-              .d-flex.no-block.align-items-center
-                .checkbox.checkbox-primary.p-t-0
-                  = f.check_box :remember_me
-                  = f.label :remember_me
+            - if devise_mapping.rememberable?
+              .form-group
+                .d-flex
+                  div class="checkbox checkbox-info pt-0"
+                    input id="checkbox-signup" type="checkbox" class="material-inputs chk-col-indigo"
+                      label for="checkbox-signup" Remember me
 
-          .form-group.text-center.m-t-20
-            .col-xs-12
-              = f.submit "Log in", class: 'btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light'
+            .form-group.text-center.mt-4.mb-3
+              .col-xs-12
+                = f.submit "Log in", class: 'btn btn-info d-block w-100 waves-effect waves-light'
+
 

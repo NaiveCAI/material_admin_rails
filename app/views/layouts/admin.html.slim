@@ -17,17 +17,28 @@ html xmlns:wb="http://open.weibo.com/wb"
     /! Preloader - style you can find in spinners.css
     // NOTE: Need fix for turbolinks.
     / .preloader
-    /   svg.circular viewbox=("25 25 50 50") 
+    /   svg.circular viewbox=("25 25 50 50")
     /     circle.path cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="2" /
 
     /! Main wrapper - style you can find in pages.scss
-    #main-wrapper
+    #main-wrapper[
+      data-theme="light"
+      data-layout="vertical"
+      data-navbarbg="skin1"
+      data-sidebartype="full"
+      data-sidebar-position="fixed"
+      data-header-position="fixed"
+      data-boxed-layout="full"
+    ]
       = render 'admin/shared/header'
       = render 'admin/shared/sidebar'
-      
-      .page-wrapper
+
+      .page-wrapper style="display: block;"
+        = yield :breadcrumb
+
         .container-fluid
-          = yield :breadcrumb
+          = yield :error_messages
+          
           .row
             = yield
 

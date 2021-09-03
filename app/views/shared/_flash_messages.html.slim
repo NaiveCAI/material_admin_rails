@@ -1,0 +1,14 @@
+- if flash.any?
+  - flash.each do |name, msg|
+    - if [String, Array].include?(msg.class)
+      - message = msg.is_a?(Array) ? msg.join('<br>').html_safe : msg
+
+      div [
+        class="alert customize-alert alert-dismissible alert-light-#{name.to_s == 'notice' ? 'success' : 'danger'} text-danger fade show"
+        role="alert" 
+      ]
+        button.btn-close aria-label="Close" data-bs-dismiss="alert" type="button" 
+
+        .d-flex.align-items-center.font-weight-medium
+         i.text-danger.fill-white.feather-sm.me-2 data-feather="info" = message
+

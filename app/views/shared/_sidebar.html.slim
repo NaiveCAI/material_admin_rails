@@ -1,15 +1,14 @@
 /! ==============================================================
 /! Left Sidebar - style you can find in sidebar.scss
 /! ==============================================================
-aside.left-sidebar
-  /! Sidebar scroll
-  .scroll-sidebar
-    /! Sidebar navigation
+aside.left-sidebar data-sidebarbg='skin6'
+  .scroll-sidebar.ps-container.ps-theme-default.ps-active-y
+    /! Sidebar scroll
     nav.sidebar-nav
-      ul#sidebarnav
+      ul#sidebarnav.in
         / li.nav-small-cap Project title
-        li
-          = link_to '#' do
+        li class=sidebar_item_classes('users')
+          = link_to '#', class: sidebar_item_link_classes('users') do
             i.fa.fa-user
             span.hide-menu Menu
 
@@ -19,5 +18,7 @@ aside.left-sidebar
     /   i.ti-settings
     / a.link data-toggle="tooltip" href="" title="Email"
     /   i.mdi.mdi-gmail
-    a.link data-toggle="tooltip" href=destroy_admin_session_path title="Logout" data-method="DELETE"
+    = link_to destroy_admin_session_path, title: 'Logout', method: :delete, data: { toggle: 'tooltip' } do
       i.mdi.mdi-power
+    / a.link data-toggle="tooltip" href=destroy_admin_session_path title="Logout" data-method="DELETE"
+
