@@ -51,34 +51,12 @@ html, body {
   width: 100% !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__placeholder {
-  font-size: 16px;
-  color: #67757c;
+
+/* DataTable */
+div.dataTables_wrapper div.dataTables_paginate {
+  margin-top: 8px;
 }
 
-.datepicker.datepicker-dropdown.dropdown-menu {
-  z-index: 9999 !important;
+.page-wrapper {
+  transition: none;
 }
-
-
-/* Admin template css update */
-.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-  margin-left: -1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.form-control, .form-control::placeholder {
-  font-weight: 200;
-}
-
-.btn.active.focus, .btn.active:focus,
-.btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-  outline: none;
-}
-

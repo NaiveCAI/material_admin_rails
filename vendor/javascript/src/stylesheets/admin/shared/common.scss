@@ -13,48 +13,59 @@ ul#sidebarnav > li > a {
 }
 
 /* form */
-form .form-body {
-  .form-group > label,
-  .form-group .field_with_errors > label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+[type='checkbox'] + label {
+  margin-right: 15px;
+}
+
+[type='radio'] + label {
+  margin-right: 15px;
+}
+
+form .form-body .form-group > label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-body .form-group {
+  padding-bottom: 0;
+  margin-bottom: 14px;
+  border-bottom: none;
+}
+
+
+input[type='text'].form-control,
+textarea.form-control {
+  &::-webkit-input-placeholder {
+    font-weight: 300;
   }
-
-  .form-group {
-    padding-bottom: 0;
-    margin-bottom: 14px;
-    border-bottom: none;
+  &::-moz-placeholder {
+    font-weight: 300;
   }
-
-  .field_with_errors {
-    display: contents;
-
-    .form-control {
-      border-color: #fc4b6c;
-      padding-right: calc(1.5em + .75rem);
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23fc4b6c'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23fc4b6c' stroke='none'/%3e%3c/svg%3e");
-      background-repeat: no-repeat;
-      background-position: right calc(.375em + .1875rem) center;
-      background-size: calc(.75em + .375rem) calc(.75em + .375rem);
-    }
-
-    span.select2.select2-container .selection .select2-selection {
-      border-color: #fc4b6c;
-      padding-right: calc(1.5em + .75rem);
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23fc4b6c'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23fc4b6c' stroke='none'/%3e%3c/svg%3e");
-      background-repeat: no-repeat;
-      background-position: right calc(.375em + 1rem) center;
-      background-size: calc(.75em + .375rem) calc(.75em + .375rem);
-    }
+  &:-ms-input-placeholder {
+    font-weight: 300;
   }
-
-  [type=checkbox] + label {
-    margin-right: 15px;
-  }
-
-  [type=radio] + label {
-    margin-right: 15px;
+  &:-moz-placeholder {
+    font-weight: 300;
   }
 }
 
+#error_explanation ul {
+  margin-bottom: 0;
+}
+
+.input-group-text {
+  .form-check {
+    margin-bottom: 0;
+  }
+
+  .form-check-label {
+    margin-bottom: 0;
+  }
+}
+
+
+/* table */
+table.editable-table td.select-cell {
+  padding: 0;
+}

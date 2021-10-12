@@ -8,6 +8,22 @@ Easily install and set up admin quickly
 ## Prerequisite
 - Need set up your db first
 
+```
+// Gemfile
+gem 'webpacker', '~> 5.0'
+
+
+// package.json
+{
+  "dependencies": {
+    "@rails/webpacker": "5.4.2",
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}
+```
+
 
 ## Usage
 ### Installation

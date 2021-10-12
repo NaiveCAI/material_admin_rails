@@ -6,11 +6,11 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
   GEM_NAME = 'rails_material_admin'
   GEM_PATH = Gem.loaded_specs[GEM_NAME].full_gem_path
   JS_PKGS  =
-    'datatables.net-bs4 datatables.net-responsive-bs4'\
+    'datatables.net-bs5 datatables.net-responsive-bs5'\
     ' expose-loader file-loader url-loader resolve-url-loader'\
     ' @rails/ujs @rails/activestorage'\
     ' stimulus turbolinks'\
-    ' jquery popper.js select2 @popperjs/core'
+    ' jquery popper.js select2 @popperjs/core webpack-cli'
   ESLINT_JS_PKGS =
     'eslint prettier eslint-plugin-prettier eslint-config-prettier'\
     ' stylelint stylelint-config-prettier stylelint-config-recommended stylelint-scss'

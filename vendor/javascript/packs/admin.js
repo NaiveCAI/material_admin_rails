@@ -8,7 +8,7 @@ import Rails from '@rails/ujs'
 import Turbolinks from 'turbolinks'
 
 import 'datatables.net'
-import 'datatables.net-responsive-bs4'
+import 'datatables.net-responsive-bs5'
 import 'select2'
 
 import '../vendor/rails_material_admin/material_admin'

@@ -18,6 +18,16 @@ module ApplicationHelper
     { model: model, column: column }.to_json
   end
 
+  def sub_item_active?(sub_c_names = [])
+    class_names = 'sidebar-item'
+
+    if controller_name.in?(sub_c_names)
+      class_names += ' active'
+    end
+
+    class_names
+  end
+
   def sidebar_item_classes(c_names, *a_names)
     class_names = 'sidebar-item'
 
@@ -41,5 +51,4 @@ module ApplicationHelper
 
     class_names
   end
-
 end
