@@ -81,7 +81,7 @@ class CrudGenerator < Rails::Generators::NamedBase
                 .form-body
                   .form-group.row
                     // TODO:
-                    // = f.label :'', '', class: 'control-label text-right col-md-3'
+                    // = f.label :'', '', class: 'control-label text-end col-md-3'
                     // .col-md-6
                     //   = f.text_field :'', class: 'form-control', required: true, placeholder: ''
 

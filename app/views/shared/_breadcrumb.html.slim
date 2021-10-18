@@ -4,9 +4,9 @@
 - data_options = local_assigns[:data_options] ? options : {}
 
 .row.page-titles
-  .col-md-6.col-8.align-self-center
-    h3.text-themecolor.m-b-0.m-t-0 = title
-    ol.breadcrumb
+  .col-md-5.col-12.align-self-center
+    h3.text-themecolor.mb-0 = title
+    ol.breadcrumb.mb-0.mt-1
       - links.each do |ele|
         li.breadcrumb-item
           - if ele[:link]
@@ -14,9 +14,10 @@
           - else
             span = ele[:text]
 
-  .col-md-6.col-4.align-self-center.text-right
-    - buttons.each do |btn|
-      = link_to btn[:link], id: btn[:id], class: btn[:class], data: btn[:data_options] do
-        - if btn[:icon]
-          i class="fa fa-#{btn[:icon]}"
-        span.ml5 = btn[:text]
+  .col-md-7.col-12.align-self-center.d-none.d-md-block
+    .d-flex.justify-content-end
+      - buttons.each do |btn|
+        = link_to btn[:link], id: btn[:id], class: btn[:class], data: btn[:data_options] do
+          - if btn[:icon]
+            i class="fa fa-#{btn[:icon]}"
+          span.ml5 = btn[:text]
