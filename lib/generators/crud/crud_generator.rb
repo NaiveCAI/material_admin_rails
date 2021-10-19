@@ -20,7 +20,7 @@ class CrudGenerator < Rails::Generators::NamedBase
 
         export default class extends Controller {
           connect() {
-            if (!$('body').hasClass('#{layout_name}-#{resource}')) return false;
+            if (!$('body').hasClass('#{layout_name}-#{resource.gsub('_', '-')}')) return false;
 
             if (!$('table##{resource}-datatable').hasClass('dataTable')) {
               initDatatable($('##{resource}-datatable'), { searching: true });
@@ -87,7 +87,7 @@ class CrudGenerator < Rails::Generators::NamedBase
 
                 .form-actions.text-center
                   = f.submit '保存', class: 'btn btn-success waves-effect waves-light m-r-10'
-                  = link_to '返回', admin_#{resource}_path, class: 'btn btn-inverse waves-effect waves-light'
+                  = link_to '返回', admin_#{resource}_path, class: 'btn btn-inverse waves-effect waves-light ml5'
       html
     end
 
