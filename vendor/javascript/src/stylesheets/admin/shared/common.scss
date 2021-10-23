@@ -34,7 +34,7 @@ form .form-body .form-group > label {
 }
 
 
-input[type='text'].form-control,
+input.form-control,
 textarea.form-control {
   &::-webkit-input-placeholder {
     font-weight: 300;
