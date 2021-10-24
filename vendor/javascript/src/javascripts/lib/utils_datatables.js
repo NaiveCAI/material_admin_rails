@@ -80,8 +80,11 @@ $.extend($.fn.dataTable.defaults, {
   scrollX: true,
   searching: false,
   dom: "<'row'<'col-sm-6'l><'col-sm-6 text-right'f>><'row'<'col-sm-12't>><'row'<'col-sm-6'i><'col-sm-6'p>>",
+  processing: true,
   language: {
-    "sProcessing":   "处理中...",
+    "sProcessing": "<span class='fa-stack fa-lg'>\n\
+      <i class='fa fa-spinner fa-spin fa-stack-2x fa-fw'></i>\n\
+      </span>&emsp;Processing ...",
     "sLengthMenu":   "每页 _MENU_ 条",
     "sZeroRecords":  "没有匹配结果",
     "sInfo":         "第_PAGE_页 共_PAGES_页",   // "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项"
