@@ -7,8 +7,11 @@ import { definitionsFromContext } from 'stimulus/webpack-helpers'
 import Rails from '@rails/ujs'
 import Turbolinks from 'turbolinks'
 
-import 'datatables.net-responsive'
 import 'datatables.net-bs5'
+import 'datatables.net-responsive'
+import 'datatables.net-select-bs5'
+import 'datatables.net-buttons'
+
 import 'select2'
 
 import '../vendor/rails_material_admin/material_admin'

@@ -6,7 +6,7 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
   GEM_NAME = 'rails_material_admin'
   GEM_PATH = Gem.loaded_specs[GEM_NAME].full_gem_path
   JS_PKGS  =
-    'datatables.net-bs5 datatables.net-responsive'\
+    'datatables.net-bs5 datatables.net-responsive datatables.net-select-bs5 datatables.net-buttons'\
     ' expose-loader@1.0.3 file-loader url-loader resolve-url-loader'\
     ' @rails/ujs @rails/activestorage'\
     ' stimulus turbolinks'\
