@@ -49,6 +49,27 @@ rails generate crud user --options layout_name:[layout_name]
 ```
 
 
+
+## Pitfall
+- Manually fix assets precompile error
+```css
+.row {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  // margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-top: 0; // Tracy fix
+  // margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-right: -15px; // Tracy fix
+  // margin-left: calc(var(--bs-gutter-x) / -2);
+  margin-left: -15px; // Tracy fix
+}
+```
+
+
+
+
 ## Contributing
 Contribution directions go here.
 
