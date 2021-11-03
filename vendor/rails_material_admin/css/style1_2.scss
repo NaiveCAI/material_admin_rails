@@ -1,0 +1,799 @@
+body[data-theme="dark"] .badge-info,
+body[data-theme="dark"] .bg-info,
+body[data-theme="dark"] .btn-info,
+body[data-theme="dark"] .card.bg-info,
+body[data-theme="dark"] .label-info {
+  background-color: rgba(30, 136, 229, 0.5) !important;
+  border-color: rgba(30, 136, 229, 0.5) !important;
+}
+body[data-theme="dark"] .badge-secondary,
+body[data-theme="dark"] .bg-secondary,
+body[data-theme="dark"] .btn-secondary,
+body[data-theme="dark"] .card.bg-secondary {
+  background-color: rgba(108, 117, 125, 0.5) !important;
+}
+body[data-theme="dark"] .badge-primary,
+body[data-theme="dark"] .bg-primary,
+body[data-theme="dark"] .btn-primary,
+body[data-theme="dark"] .card.bg-primary,
+body[data-theme="dark"] .label-primary {
+  background-color: rgba(116, 96, 238, 0.5) !important;
+  border-color: rgba(116, 96, 238, 0.5) !important;
+}
+body[data-theme="dark"] .bg-orange,
+body[data-theme="dark"] .btn-orange,
+body[data-theme="dark"] .card.bg-orange {
+  background-color: rgba(251, 140, 0, 0.5) !important;
+  border-color: rgba(251, 140, 0, 0.5) !important;
+}
+body[data-theme="dark"] .badge-success,
+body[data-theme="dark"] .bg-success,
+body[data-theme="dark"] .btn-success,
+body[data-theme="dark"] .card.bg-success,
+body[data-theme="dark"] .label-success {
+  background-color: rgba(33, 193, 214, 0.5) !important;
+  border-color: rgba(33, 193, 214, 0.5) !important;
+}
+body[data-theme="dark"] .badge-danger,
+body[data-theme="dark"] .bg-danger,
+body[data-theme="dark"] .btn-danger,
+body[data-theme="dark"] .card.bg-danger,
+body[data-theme="dark"] .label-danger {
+  background-color: rgba(252, 75, 108, 0.5) !important;
+  border-color: rgba(252, 75, 108, 0.5) !important;
+}
+body[data-theme="dark"] .badge-warning,
+body[data-theme="dark"] .bg-warning,
+body[data-theme="dark"] .btn-warning,
+body[data-theme="dark"] .card.bg-warning,
+body[data-theme="dark"] .round.round-warning {
+  background-color: rgba(255, 178, 43, 0.5) !important;
+  border-color: rgba(255, 178, 43, 0.5) !important;
+}
+body[data-theme="dark"] .bg-white {
+  background-color: #272b34 !important;
+}
+body[data-theme="dark"] .bg-dark {
+  background-color: #6c757d !important;
+}
+body[data-theme="dark"] .round.round-danger {
+  background: rgba(252, 75, 108, 0.5);
+}
+body[data-theme="dark"] .bg-light {
+  background-color: #3c424e !important;
+}
+body[data-theme="dark"] .alert-light-info,
+body[data-theme="dark"] .bg-light-info,
+body[data-theme="dark"] .btn-light-info {
+  background-color: rgba(30, 136, 229, 0.3) !important;
+  border-color: rgba(30, 136, 229, 0.3) !important;
+}
+body[data-theme="dark"] .alert-light-success,
+body[data-theme="dark"] .bg-light-success,
+body[data-theme="dark"] .btn-light-success,
+body[data-theme="dark"] .email-app .email-table .selected {
+  background-color: rgba(33, 193, 214, 0.3) !important;
+  border-color: rgba(33, 193, 214, 0.3) !important;
+}
+body[data-theme="dark"] .alert-light-warning,
+body[data-theme="dark"] .bg-light-warning,
+body[data-theme="dark"] .btn-light-warning,
+body[data-theme="dark"] .mark,
+body[data-theme="dark"] mark {
+  background-color: rgba(255, 178, 43, 0.3) !important;
+  border-color: rgba(255, 178, 43, 0.3) !important;
+}
+body[data-theme="dark"] .alert-light-danger,
+body[data-theme="dark"] .bg-light-danger,
+body[data-theme="dark"] .btn-light-danger {
+  background-color: rgba(252, 75, 108, 0.3) !important;
+  border-color: rgba(252, 75, 108, 0.3) !important;
+}
+body[data-theme="dark"] .bg-light-cyan,
+body[data-theme="dark"] .btn-light-cyan {
+  background-color: #405863 !important;
+  border-color: #405863 !important;
+}
+body[data-theme="dark"] .alert-light-secondary,
+body[data-theme="dark"] .bg-light-secondary,
+body[data-theme="dark"] .btn-light-secondary {
+  background-color: rgba(108, 117, 125, 0.3) !important;
+  border-color: rgba(108, 117, 125, 0.3) !important;
+}
+body[data-theme="dark"] .bg-light-inverse {
+  background-color: #544f4f !important;
+}
+body[data-theme="dark"] .alert-light-primary,
+body[data-theme="dark"] .bg-light-primary,
+body[data-theme="dark"] .btn-light-primary {
+  background-color: rgba(116, 96, 238, 0.3) !important;
+  border-color: rgba(116, 96, 238, 0.3) !important;
+}
+body[data-theme="dark"] .btn-light-primary:focus,
+body[data-theme="dark"] .btn-light-primary:hover {
+  background-color: #7460ee !important;
+  border-color: #7460ee !important;
+  color: #fff !important;
+}
+body[data-theme="dark"] .btn-light-success:focus,
+body[data-theme="dark"] .btn-light-success:hover {
+  background-color: #21c1d6 !important;
+  border-color: #21c1d6 !important;
+  color: #fff !important;
+}
+body[data-theme="dark"] .btn-light-warning:focus,
+body[data-theme="dark"] .btn-light-warning:hover {
+  background-color: #ffb22b !important;
+  border-color: #ffb22b !important;
+  color: #fff !important;
+}
+body[data-theme="dark"] .btn-light-danger:focus,
+body[data-theme="dark"] .btn-light-danger:hover {
+  background-color: #fc4b6c !important;
+  border-color: #fc4b6c !important;
+  color: #fff !important;
+}
+body[data-theme="dark"] .btn-light-secondary:focus,
+body[data-theme="dark"] .btn-light-secondary:hover {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #fff !important;
+}
+body[data-theme="dark"] .btn-light-info:focus,
+body[data-theme="dark"] .btn-light-info:hover {
+  background-color: #1e88e5 !important;
+  border-color: #1e88e5 !important;
+  color: #fff !important;
+}
+body[data-theme="dark"] .badge-light {
+  background-color: #343a40;
+  color: #b2b9bf;
+}
+body[data-theme="dark"] .btn-light {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #b2b9bf;
+}
+body[data-theme="dark"] .badge-light-success {
+  background-color: #516d55;
+}
+body[data-theme="dark"] .badge-light-info {
+  background-color: #27546f;
+}
+body[data-theme="dark"] .badge-light-danger {
+  background-color: #583a41;
+}
+body[data-theme="dark"] .alert-primary {
+  background-color: rgba(116, 96, 238, 0.4);
+  border-color: rgba(116, 96, 238, 0.3);
+  color: #7460ee;
+}
+body[data-theme="dark"] .alert-secondary {
+  background-color: rgba(71, 86, 103, 0.4);
+  border-color: rgba(222, 226, 231, 0.3);
+  color: #6c757d;
+}
+body[data-theme="dark"] .alert-success {
+  background-color: rgba(33, 193, 214, 0.4);
+  border-color: rgba(33, 193, 214, 0.3);
+}
+body[data-theme="dark"] .alert-danger {
+  background-color: rgba(252, 75, 108, 0.4);
+  border-color: rgba(252, 75, 108, 0.3);
+}
+body[data-theme="dark"] .alert-warning {
+  background-color: rgba(255, 178, 43, 0.4);
+  border-color: rgba(255, 178, 43, 0.3);
+}
+body[data-theme="dark"] .alert-info {
+  background-color: rgba(30, 136, 229, 0.4);
+  border-color: rgba(30, 136, 229, 0.3);
+}
+body[data-theme="dark"] .alert-light {
+  background-color: rgba(253, 254, 254, 0.4);
+  border-color: rgba(252, 253, 254, 0.3);
+}
+body[data-theme="dark"] .alert-dark {
+  background-color: rgba(52, 58, 64, 0.4);
+  border-color: rgba(52, 58, 64, 0.3);
+}
+body[data-theme="dark"] .form-check-input {
+  background-color: #323743;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+body[data-theme="dark"] .form-check-input:checked {
+  background-color: #1e88e5;
+  border-color: #1e88e5;
+}
+body[data-theme="dark"] .table-danger,
+body[data-theme="dark"] .table-info,
+body[data-theme="dark"] .table-primary,
+body[data-theme="dark"] .table-success,
+body[data-theme="dark"] .table-warning {
+  --bs-table-bg: unset;
+}
+body[data-theme="dark"] .table-striped > tbody > tr:nth-of-type(odd) {
+  --bs-table-accent-bg: #313642;
+}
+body[data-theme="dark"] .table-danger,
+body[data-theme="dark"] .table-danger > td,
+body[data-theme="dark"] .table-danger > th {
+  background-color: rgba(252, 75, 108, 0.2) !important;
+}
+body[data-theme="dark"] .table-success,
+body[data-theme="dark"] .table-success > td,
+body[data-theme="dark"] .table-success > th {
+  background-color: rgba(33, 193, 214, 0.2) !important;
+}
+body[data-theme="dark"] .table-primary,
+body[data-theme="dark"] .table-primary > td,
+body[data-theme="dark"] .table-primary > th {
+  background-color: rgba(116, 96, 238, 0.2) !important;
+}
+body[data-theme="dark"] .table-info,
+body[data-theme="dark"] .table-info > td,
+body[data-theme="dark"] .table-info > th {
+  background-color: rgba(30, 136, 229, 0.2) !important;
+}
+body[data-theme="dark"] .table-warning,
+body[data-theme="dark"] .table-warning > td,
+body[data-theme="dark"] .table-warning > th {
+  background-color: rgba(255, 178, 43, 0.2) !important;
+}
+body[data-theme="dark"] .form-control.border.border-warning {
+  border-color: #ffb22b !important;
+}
+body[data-theme="dark"] .form-control.border.border-info {
+  border-color: #1e88e5 !important;
+}
+body[data-theme="dark"] .form-control.border.border-danger {
+  border-color: #fc4b6c !important;
+}
+body[data-theme="dark"] .form-control.border.border-primary {
+  border-color: #7460ee !important;
+}
+body[data-theme="dark"] .form-control.border.border-success {
+  border-color: #21c1d6 !important;
+}
+body[data-theme="dark"] .fill-white {
+  fill: rgba(0, 0, 0, 0.1);
+}
+body[data-theme="dark"] .accordion-button::after,
+body[data-theme="dark"] .btn-close {
+  filter: contrast(0.1);
+  opacity: 1;
+}
+body[data-theme="dark"] .accordion-button,
+body[data-theme="dark"] .breadcrumb-item.active,
+body[data-theme="dark"] .chat-list .chat-item .chat-content .box,
+body[data-theme="dark"] .chat-list .chat-item .chat-content .box.bg-light,
+body[data-theme="dark"] .cke_reset_all,
+body[data-theme="dark"] .cke_reset_all *,
+body[data-theme="dark"] .cke_reset_all a,
+body[data-theme="dark"] .cke_reset_all textarea,
+body[data-theme="dark"] .custom-file-label::after,
+body[data-theme="dark"] .daterangepicker select.ampmselect,
+body[data-theme="dark"] .daterangepicker select.hourselect,
+body[data-theme="dark"] .daterangepicker select.minuteselect,
+body[data-theme="dark"] .daterangepicker select.monthselect,
+body[data-theme="dark"] .daterangepicker select.secondselect,
+body[data-theme="dark"] .daterangepicker select.yearselect,
+body[data-theme="dark"] .dropdown-item,
+body[data-theme="dark"] .dropdown-menu,
+body[data-theme="dark"] .dtp .dtp-picker-time > a,
+body[data-theme="dark"] .dtp table.dtp-picker-days tr > td > a,
+body[data-theme="dark"]
+  .email-app
+  .list-group
+  .list-group-item
+  .list-group-item-action,
+body[data-theme="dark"] .form-control,
+body[data-theme="dark"] .form-select,
+body[data-theme="dark"] .h1,
+body[data-theme="dark"] .h2,
+body[data-theme="dark"] .h3,
+body[data-theme="dark"] .h4,
+body[data-theme="dark"] .h5,
+body[data-theme="dark"] .h6,
+body[data-theme="dark"] .input-group-text,
+body[data-theme="dark"] .list-group-item-action,
+body[data-theme="dark"] .lobilists .btn-link,
+body[data-theme="dark"] .lobilists .lobilist-item-title,
+body[data-theme="dark"] .mailbox .message-center .message-item .message-title,
+body[data-theme="dark"] .mce-container,
+body[data-theme="dark"] .mce-container *,
+body[data-theme="dark"] .mce-ico,
+body[data-theme="dark"] .mce-menubar .mce-menubtn button span,
+body[data-theme="dark"] .mce-reset,
+body[data-theme="dark"] .mce-widget,
+body[data-theme="dark"] .mce-widget *,
+body[data-theme="dark"] .nav-tabs .nav-item.show .nav-link,
+body[data-theme="dark"] .nav-tabs .nav-link.active,
+body[data-theme="dark"] .nav-tabs .nav-link:focus,
+body[data-theme="dark"] .nav-tabs .nav-link:hover,
+body[data-theme="dark"] .noUi-tooltip,
+body[data-theme="dark"]
+  .note-editor.note-frame
+  .note-editing-area
+  .note-editable,
+body[data-theme="dark"]
+  .page-titles
+  .breadcrumb
+  .breadcrumb-item
+  + .breadcrumb-item::before,
+body[data-theme="dark"] .page-wrapper,
+body[data-theme="dark"] .picker,
+body[data-theme="dark"] .popover-body,
+body[data-theme="dark"] .ql-snow .ql-picker.ql-header .ql-picker-item::before,
+body[data-theme="dark"] .ql-snow .ql-picker.ql-header .ql-picker-label::before,
+body[data-theme="dark"] .select2-container--classic .select2-selection--single,
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-search--dropdown
+  .select2-search__field,
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-selection--multiple,
+body[data-theme="dark"] .select2-container--default .select2-selection--single,
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow,
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered,
+body[data-theme="dark"] .swal2-input,
+body[data-theme="dark"] .swal2-popup .swal2-content,
+body[data-theme="dark"] .swal2-popup .swal2-title,
+body[data-theme="dark"] .table,
+body[data-theme="dark"] .table .thead-light th,
+body[data-theme="dark"] .table-hover tbody tr:hover,
+body[data-theme="dark"] .table-light,
+body[data-theme="dark"] .table-striped > tbody > tr:nth-of-type(odd),
+body[data-theme="dark"] .text-bodycolor,
+body[data-theme="dark"] .toast-header,
+body[data-theme="dark"] a.link,
+body[data-theme="dark"] button.list-group-item,
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3,
+body[data-theme="dark"] h4,
+body[data-theme="dark"] h5,
+body[data-theme="dark"] h6,
+body[data-theme="dark"] ul.list-style-none li a {
+  color: #b2b9bf;
+}
+body[data-theme="dark"] #main-wrapper,
+body[data-theme="dark"] .bg-light,
+body[data-theme="dark"] .bg-white,
+body[data-theme="dark"] .chat-list .chat-item .chat-content .box.bg-light-info,
+body[data-theme="dark"] .cke_toolbar_separator,
+body[data-theme="dark"] .custom-file-label::after,
+body[data-theme="dark"] .customizer,
+body[data-theme="dark"] .daterangepicker .ranges li:hover,
+body[data-theme="dark"] .daterangepicker td.available:hover,
+body[data-theme="dark"] .daterangepicker th.available:hover,
+body[data-theme="dark"] .dropdown-menu,
+body[data-theme="dark"] .form-select,
+body[data-theme="dark"] .icon-hover:hover,
+body[data-theme="dark"] .input-group-text,
+body[data-theme="dark"] .jumbotron,
+body[data-theme="dark"] .list-group-item.active,
+body[data-theme="dark"] .mce-panel,
+body[data-theme="dark"] .myadmin-dd .dd-list .dd-item .dd-handle,
+body[data-theme="dark"] .myadmin-dd-empty .dd-list .dd3-content,
+body[data-theme="dark"] .myadmin-dd-empty .dd-list .dd3-handle,
+body[data-theme="dark"] .page-wrapper,
+body[data-theme="dark"] .progress,
+body[data-theme="dark"] .ql-snow .ql-picker-options,
+body[data-theme="dark"]
+  .select2-container--classic
+  .select2-search--dropdown
+  .select2-search__field,
+body[data-theme="dark"] .select2-container--classic .select2-selection--single,
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-results__option[aria-selected="true"],
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-search--dropdown
+  .select2-search__field,
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-selection--multiple,
+body[data-theme="dark"] .select2-container--default .select2-selection--single,
+body[data-theme="dark"] .select2-dropdown,
+body[data-theme="dark"] .table .thead-light th,
+body[data-theme="dark"] .table-hover tbody tr:hover,
+body[data-theme="dark"] .toast-header,
+body[data-theme="dark"]
+  .wizard-content
+  .wizard
+  > .actions
+  > ul
+  > li
+  > a[href="#previous"],
+body[data-theme="dark"] .wizard-content .wizard > .steps .step,
+body[data-theme="dark"] .wizard:not(.wizard-circle) > .actions .disabled a,
+body[data-theme="dark"]
+  .wizard:not(.wizard-circle)
+  > .actions
+  .disabled
+  a:active,
+body[data-theme="dark"]
+  .wizard:not(.wizard-circle)
+  > .actions
+  .disabled
+  a:hover,
+body[data-theme="dark"] .wizard:not(.wizard-circle) > .content,
+body[data-theme="dark"] .wizard:not(.wizard-circle) > .steps .disabled a,
+body[data-theme="dark"] .wizard:not(.wizard-circle) > .steps .disabled a:active,
+body[data-theme="dark"] .wizard:not(.wizard-circle) > .steps .disabled a:hover,
+body[data-theme="dark"] pre[class*="language-"] {
+  background-color: #323743 !important;
+}
+body[data-theme="dark"] .table-hover > tbody > tr:hover {
+  --bs-table-accent-bg: $theme-dark-bg-layout !important;
+}
+body[data-theme="dark"] .table-light {
+  --bs-table-bg: $theme-dark-bg-layout;
+}
+body[data-theme="dark"] .bg-extra-light {
+  background-color: #3c424e !important;
+}
+body[data-theme="dark"] .bootstrap-switch .bootstrap-switch-label,
+body[data-theme="dark"] .cd-horizontal-timeline .events a::after,
+body[data-theme="dark"] .cke_top,
+body[data-theme="dark"] .css-bar > i,
+body[data-theme="dark"] .datepicker .datepicker-switch:hover,
+body[data-theme="dark"] .datepicker .next:hover,
+body[data-theme="dark"] .datepicker .prev:hover,
+body[data-theme="dark"] .datepicker table tr td.day.focused,
+body[data-theme="dark"] .datepicker table tr td.day:hover,
+body[data-theme="dark"] .datepicker tfoot tr th:hover,
+body[data-theme="dark"] .daterangepicker,
+body[data-theme="dark"] .daterangepicker .calendar-table,
+body[data-theme="dark"] .daterangepicker td.off,
+body[data-theme="dark"] .daterangepicker td.off.end-date,
+body[data-theme="dark"] .daterangepicker td.off.in-range,
+body[data-theme="dark"] .daterangepicker td.off.start-date,
+body[data-theme="dark"] .dp-off,
+body[data-theme="dark"]
+  .email-app
+  .list-group
+  .list-group-item
+  .list-group-item-action.active,
+body[data-theme="dark"]
+  .email-app
+  .list-group
+  .list-group-item
+  .list-group-item-action:hover,
+body[data-theme="dark"] .fc-toolbar .fc-button.fc-state-active,
+body[data-theme="dark"] .fc-unthemed td.fc-today,
+body[data-theme="dark"] .feed-widget .feed-body .feed-item:hover,
+body[data-theme="dark"] .footable-odd,
+body[data-theme="dark"] .jsgrid-alt-row > .jsgrid-cell,
+body[data-theme="dark"] .jsgrid-filter-row > .jsgrid-cell,
+body[data-theme="dark"] .mce-menu-item.mce-disabled,
+body[data-theme="dark"] .mce-menu-item.mce-disabled:hover,
+body[data-theme="dark"] .noUi-target,
+body[data-theme="dark"] .noUi-tooltip,
+body[data-theme="dark"] .picker--time .picker__box,
+body[data-theme="dark"] .picker__box,
+body[data-theme="dark"] .picker__list-item,
+body[data-theme="dark"] .striped-rows .row:nth-child(odd),
+body[data-theme="dark"] .swal2-popup,
+body[data-theme="dark"] .table-hover > tbody > tr:hover,
+body[data-theme="dark"] div.mce-edit-area {
+  background: #323743 !important;
+}
+body[data-theme="dark"] .card-header {
+  background: #3c424e;
+}
+body[data-theme="dark"] .footable .pagination li a,
+body[data-theme="dark"] .footable .pagination li.disabled a,
+body[data-theme="dark"] .toast,
+body[data-theme="dark"] .twitter-typeahead .tt-menu {
+  background-color: #323743;
+}
+body[data-theme="dark"] .breadcrumb {
+  background-color: transparent;
+}
+body[data-theme="dark"] .daterangepicker select.ampmselect,
+body[data-theme="dark"] .daterangepicker select.hourselect,
+body[data-theme="dark"] .daterangepicker select.minuteselect,
+body[data-theme="dark"] .daterangepicker select.monthselect,
+body[data-theme="dark"] .daterangepicker select.secondselect,
+body[data-theme="dark"] .daterangepicker select.yearselect {
+  background: #323743;
+  border: 1px solid #323743;
+}
+body[data-theme="dark"]
+  .select2-container--classic.select2-container--open.select2-container--below
+  .select2-selection--single {
+  background-image: -webkit-linear-gradient(top, #272b34 50%, #272b34 100%);
+}
+body[data-theme="dark"] .accordion-button:not(.collapsed),
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .card-footer,
+body[data-theme="dark"] .css-bar:after,
+body[data-theme="dark"] .dtp > .dtp-content,
+body[data-theme="dark"] .form-control,
+body[data-theme="dark"] .form-select,
+body[data-theme="dark"] .jsgrid-header-row > .jsgrid-header-cell,
+body[data-theme="dark"] .jsgrid-row > .jsgrid-cell,
+body[data-theme="dark"] .jvectormap-container,
+body[data-theme="dark"] .left-part,
+body[data-theme="dark"] .list-group-item,
+body[data-theme="dark"] .list-group-item-action:active,
+body[data-theme="dark"] .lobilists .lobilist,
+body[data-theme="dark"] .modal-content,
+body[data-theme="dark"] .nav-tabs .nav-item.show .nav-link,
+body[data-theme="dark"] .nav-tabs .nav-link.active,
+body[data-theme="dark"]
+  .note-editor.note-frame
+  .note-editing-area
+  .note-editable,
+body[data-theme="dark"] .note-editor.note-frame .note-statusbar,
+body[data-theme="dark"] .page-item.disabled .page-link,
+body[data-theme="dark"] .page-link,
+body[data-theme="dark"] .popover,
+body[data-theme="dark"] .popover-header,
+body[data-theme="dark"] .right-part.mail-compose,
+body[data-theme="dark"] .right-part.mail-details,
+body[data-theme="dark"] .right-part.mail-list,
+body[data-theme="dark"] .select2-container--classic .select2-selection--single,
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-selection--multiple,
+body[data-theme="dark"] .select2-container--default .select2-selection--single,
+body[data-theme="dark"] .select2-dropdown,
+body[data-theme="dark"] .typeahead.form-control {
+  background-color: #272b34 !important;
+}
+body[data-theme="dark"] .dropdown-item:focus,
+body[data-theme="dark"] .dropdown-item:hover,
+body[data-theme="dark"] .dropzone,
+body[data-theme="dark"] .footer,
+body[data-theme="dark"] .jsgrid-grid-header,
+body[data-theme="dark"] .mailbox .message-center .message-item.active,
+body[data-theme="dark"] .mailbox .message-center .message-item:hover,
+body[data-theme="dark"] .page-titles,
+body[data-theme="dark"] .picker__button--clear,
+body[data-theme="dark"] .picker__button--close,
+body[data-theme="dark"] .picker__button--today {
+  background: #272b34;
+}
+body[data-theme="dark"] .fc-unthemed .fc-divider,
+body[data-theme="dark"] .fc-unthemed .fc-list-heading td,
+body[data-theme="dark"] .fc-unthemed .fc-popover .fc-header {
+  background: #b2b9bf;
+}
+body[data-theme="dark"] .form-control.form-input-bg {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border: 0;
+}
+body[data-theme="dark"] .form-control.form-input-bg:focus {
+  background-color: rgba(0, 0, 0, 0.09) !important;
+}
+body[data-theme="dark"] .accordion-button,
+body[data-theme="dark"] .accordion-collapse,
+body[data-theme="dark"] .activity-box .date-divider,
+body[data-theme="dark"] .b-form .row,
+body[data-theme="dark"] .bootstrap-switch,
+body[data-theme="dark"] .border,
+body[data-theme="dark"] .border-bottom,
+body[data-theme="dark"] .border-end,
+body[data-theme="dark"] .border-start,
+body[data-theme="dark"] .border-top,
+body[data-theme="dark"] .btn-outline-secondary,
+body[data-theme="dark"] .card-group .card,
+body[data-theme="dark"] .cd-horizontal-timeline .events a::after,
+body[data-theme="dark"] .cd-timeline-navigation a,
+body[data-theme="dark"] .cke_chrome,
+body[data-theme="dark"]
+  .cke_toolgroup
+  a.cke_button.cke_button_disabled:hover:last-child:after,
+body[data-theme="dark"] .cke_toolgroup a.cke_button:last-child:after,
+body[data-theme="dark"] .custom-file-label,
+body[data-theme="dark"] .custom-file-label::after,
+body[data-theme="dark"] .datepaginator .pagination li a,
+body[data-theme="dark"] .datepaginator-lg .pagination li a,
+body[data-theme="dark"] .datepaginator-sm .pagination li a,
+body[data-theme="dark"] .daterangepicker,
+body[data-theme="dark"] .daterangepicker .calendar-table,
+body[data-theme="dark"] .daterangepicker .drp-buttons,
+body[data-theme="dark"] .dropdown-divider,
+body[data-theme="dark"] .dropdown-menu,
+body[data-theme="dark"] .dropzone,
+body[data-theme="dark"] .e-campaign .c-cost,
+body[data-theme="dark"] .fixed-table-container,
+body[data-theme="dark"] .footable .pagination li a,
+body[data-theme="dark"] .footable .pagination li.disabled a,
+body[data-theme="dark"] .footer,
+body[data-theme="dark"] .form-check-input,
+body[data-theme="dark"] .form-control,
+body[data-theme="dark"] .form-select,
+body[data-theme="dark"] .input-group-text,
+body[data-theme="dark"] .jsgrid-edit-row > .jsgrid-cell,
+body[data-theme="dark"] .jsgrid-filter-row > .jsgrid-cell,
+body[data-theme="dark"] .jsgrid-grid-body,
+body[data-theme="dark"] .jsgrid-grid-header,
+body[data-theme="dark"] .jsgrid-header-row > .jsgrid-header-cell,
+body[data-theme="dark"] .jsgrid-insert-row > .jsgrid-cell,
+body[data-theme="dark"] .jsgrid-pager-current-page,
+body[data-theme="dark"] .jsgrid-pager-nav-button a,
+body[data-theme="dark"] .jsgrid-pager-page a,
+body[data-theme="dark"] .left-part,
+body[data-theme="dark"] .list-group-item,
+body[data-theme="dark"] .lobilists .lobilist,
+body[data-theme="dark"] .lobilists .lobilist-footer,
+body[data-theme="dark"] .lobilists .lobilist-form-footer,
+body[data-theme="dark"] .lobilists .lobilist-item,
+body[data-theme="dark"] .lobilists .lobilist-item .drag-handler,
+body[data-theme="dark"] .mailbox .message-center .message-item,
+body[data-theme="dark"] .mailbox .nav-link,
+body[data-theme="dark"] .mce-btn-group:not(:first-child),
+body[data-theme="dark"] .mce-btn:active,
+body[data-theme="dark"] .mce-btn:hover,
+body[data-theme="dark"] .mce-menubar,
+body[data-theme="dark"] .mce-panel,
+body[data-theme="dark"] .mce-splitbtn:hover .mce-open,
+body[data-theme="dark"] .modal-footer,
+body[data-theme="dark"] .modal-header,
+body[data-theme="dark"] .nav-tabs,
+body[data-theme="dark"] .nav-tabs .nav-item.show .nav-link,
+body[data-theme="dark"] .nav-tabs .nav-link.active,
+body[data-theme="dark"] .nav-tabs .nav-link:focus,
+body[data-theme="dark"] .nav-tabs .nav-link:hover,
+body[data-theme="dark"] .noUi-tooltip,
+body[data-theme="dark"] .note-editor.note-frame,
+body[data-theme="dark"] .note-editor.note-frame .note-statusbar,
+body[data-theme="dark"] .page-link,
+body[data-theme="dark"] .picker__button--clear,
+body[data-theme="dark"] .picker__button--close,
+body[data-theme="dark"] .picker__button--today,
+body[data-theme="dark"] .picker__list-item,
+body[data-theme="dark"] .popover-header,
+body[data-theme="dark"] .profiletimeline,
+body[data-theme="dark"] .ql-container.ql-snow,
+body[data-theme="dark"] .ql-toolbar.ql-snow,
+body[data-theme="dark"] .r-separator .form-group,
+body[data-theme="dark"] .select2-container--classic .select2-selection--single,
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-selection--multiple,
+body[data-theme="dark"] .select2-container--default .select2-selection--single,
+body[data-theme="dark"] .select2-dropdown,
+body[data-theme="dark"] .steamline,
+body[data-theme="dark"] .steamline .sl-item,
+body[data-theme="dark"] .table td,
+body[data-theme="dark"] .table th,
+body[data-theme="dark"] .table-bordered,
+body[data-theme="dark"] .table-bordered td,
+body[data-theme="dark"] .table-bordered th,
+body[data-theme="dark"] .timeline > .timeline-item > .timeline-panel,
+body[data-theme="dark"] .twitter-typeahead .tt-menu,
+body[data-theme="dark"] .wizard-content .wizard.wizard-circle > .steps .step,
+body[data-theme="dark"]
+  .wizard-content
+  .wizard
+  > .actions
+  > ul
+  > li
+  > a[href="#previous"],
+body[data-theme="dark"] blockquote,
+body[data-theme="dark"] pre[class*="language-"],
+body[data-theme="dark"] table.footable,
+body[data-theme="dark"] table.footable-details {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+body[data-theme="dark"]
+  .select2-container--default
+  .select2-search--dropdown
+  .select2-search__field {
+  border: 1px solid #272b34;
+}
+body[data-theme="dark"] .msg-widget .msg-item .msg-body .down-arrow {
+  border-top: 8px solid #323743;
+}
+body[data-theme="dark"] .form-material .form-control,
+body[data-theme="dark"] .form-material .form-control.focus,
+body[data-theme="dark"] .form-material .form-control:focus {
+  background-image: linear-gradient(#186dde, #186dde),
+    linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+body[data-theme="dark"] .css-bar-danger.css-bar-30 {
+  background-image: linear-gradient(
+      90deg,
+      #323743 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(198deg, #fc4b6c 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-primary.css-bar-20 {
+  background-image: linear-gradient(
+      90deg,
+      #323743 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(162deg, #2c63ff 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-primary.css-bar-50 {
+  background-image: linear-gradient(
+      270deg,
+      #2c63ff 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #2c63ff 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-danger.css-bar-20 {
+  background-image: linear-gradient(
+      90deg,
+      #323743 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(162deg, #fc4b6c 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-warning.css-bar-40 {
+  background-image: linear-gradient(
+      90deg,
+      #323743 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(234deg, #ffbc34 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-info.css-bar-60 {
+  background-image: linear-gradient(
+      306deg,
+      #1e88e5 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #1e88e5 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-success.css-bar-20 {
+  background-image: linear-gradient(162deg, #26c6da 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-success.css-bar-10 {
+  background-image: linear-gradient(
+      90deg,
+      #323743 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(126deg, #26c6da 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-purple.css-bar-10 {
+  background-image: linear-gradient(
+      90deg,
+      #323743 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(126deg, #7266ba 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-primary.css-bar-45 {
+  background-image: linear-gradient(
+      90deg,
+      #323743 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(252deg, #2c63ff 50%, #323743 50%, #323743);
+}
+body[data-theme="dark"] .css-bar-danger.css-bar-25 {
+  background-image: linear-gradient(
+      90deg,
+      #323743 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(180deg, #fc4b6c 50%, #323743 50%, #323743);
+}

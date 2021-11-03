@@ -67,3 +67,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 .page-wrapper {
   transition: none;
 }
+
+.table > :not(:first-child) {
+  border-top: none;
+}
