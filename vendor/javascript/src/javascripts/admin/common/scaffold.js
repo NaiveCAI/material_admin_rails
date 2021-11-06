@@ -7,6 +7,9 @@ $(document).on('turbolinks:load', () => {
 })
 
 $(document).on('turbolinks:before-cache', () => {
+  const flash_message_element = document.querySelector(".flash")
+  if (flash_message_element) { flash_message_element.remove() }
+
   $('select.select2').select2('destroy');
   destroyDataTables();
 })
