@@ -7,12 +7,15 @@ import { definitionsFromContext } from 'stimulus/webpack-helpers'
 import Rails from '@rails/ujs'
 import Turbolinks from 'turbolinks'
 
-import 'datatables.net-bs5'
+// NOTE: Import order here must not be changed
 import 'datatables.net-responsive'
-import 'datatables.net-select-bs5'
+// import 'datatables.net-fixedheader'
+import 'datatables.net-bs5'
 import 'datatables.net-buttons'
-
+import 'datatables.net-select-bs5'
 import 'select2'
+import 'daterangepicker'
+import 'bootstrap-datepicker'
 
 import '../vendor/rails_material_admin/material_admin'
 
