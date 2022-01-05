@@ -25,6 +25,11 @@ gem 'webpacker', '~> 5.0'
 ```
 
 
+## Pitfalls
+webpack-cli version should stick to 3.3.12
+expose-loader version should stick to 1.0.3
+
+
 ## Usage
 ### Installation
 Add this line to your application's Gemfile:

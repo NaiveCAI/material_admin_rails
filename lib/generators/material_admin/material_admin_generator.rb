@@ -11,7 +11,7 @@ class MaterialAdminGenerator < Rails::Generators::NamedBase
     ' expose-loader@1.0.3 file-loader url-loader resolve-url-loader'\
     ' @rails/ujs @rails/activestorage'\
     ' stimulus turbolinks'\
-    ' jquery popper.js select2 @popperjs/core webpack-cli'\
+    ' jquery popper.js select2 @popperjs/core webpack-cli@3.3.12'\
     ' daterangepicker bootstrap-datepicker'
   ESLINT_JS_PKGS =
     'eslint prettier eslint-plugin-prettier eslint-config-prettier'\
