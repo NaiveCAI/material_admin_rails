@@ -15,15 +15,11 @@ html, body {
 /* select2 */
 .select2-container {
   width: 100% !important;
-
-  .select2-dropdown {
-    z-index: 10000; // ensure on top of everything
-  }
 }
 
-// .select2-container--default .select2-selection--multiple {
-// border: 1px solid #ced4da;
-// }
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #ced4da;
+}
 
 .select2-container--default.select2-container--focus .select2-selection--multiple,
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
@@ -36,27 +32,8 @@ html, body {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.select2-container--default .select2-selection--single {
-  height: auto !important;
-  color: #495057 !important;
-  border: 1px solid #e9ecef !important;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__rendered,
-.select2-container--default .select2-selection--multiple .select2-selection__rendered, {
-  height: 36px !important;
-  line-height: 36px !important;
-  padding-left: 12px !important;
-  font-weight: inherit !important;
-
-  .select2-selection__placeholder {
-    font-weight: 300;
-    color: #54667a;
-  }
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 36px !important;
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  padding-left: 12px;
 }
 
 .select2-search__field {
@@ -74,10 +51,39 @@ html, body {
   width: 100% !important;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  font-size: 16px;
+  color: #67757c;
+}
 
-/* DataTable */
-div.dataTables_wrapper div.dataTables_paginate {
-  margin-top: 8px;
+.datepicker.datepicker-dropdown.dropdown-menu {
+  z-index: 9999 !important;
+}
+
+
+/* Admin template css update */
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-control, .form-control::placeholder {
+  font-weight: 200;
+}
+
+.btn.active.focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+}
+
+.daterangepicker {
+  z-index: inherit;
 }
 
 .page-wrapper {
@@ -87,3 +93,4 @@ div.dataTables_wrapper div.dataTables_paginate {
 .table > :not(:first-child) {
   border-top: none;
 }
+
