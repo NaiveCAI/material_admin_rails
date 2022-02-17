@@ -7,7 +7,9 @@ import { definitionsFromContext } from 'stimulus/webpack-helpers'
 import Rails from '@rails/ujs'
 import Turbolinks from 'turbolinks'
 
-// NOTE: Import order here must not be changed
+// NOTE:
+// Import order here must not be changed after it works well
+// If style went wrong, try change import order randomly🙃
 import 'datatables.net-responsive'
 // import 'datatables.net-fixedheader'
 import 'datatables.net-bs5'
