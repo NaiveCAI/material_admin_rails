@@ -1,7 +1,7 @@
 # MaterialAdmin
 Use rails webpacker to bundle the material admin template.
 
-https://wrappixel.com/demos/admin-templates/materialpro-bootstrap-latest/material-pro/src/material/ui-scrollspy.html#list-item-2
+https://demos.wrappixel.com/premium-admin-templates/bootstrap/materialpro-bootstrap/package/html/material/index.html
 
 Easily install and set up admin quickly
 
