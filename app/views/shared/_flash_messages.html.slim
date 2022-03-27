@@ -4,11 +4,17 @@
       - message = msg.is_a?(Array) ? msg.join('<br>').html_safe : msg
 
       div [
-        class="alert customize-alert alert-dismissible alert-light-#{name.to_s == 'notice' ? 'success' : 'danger'} text-danger fade show"
+        class="alert customize-alert alert-dismissible text-success alert-light-#{name.to_s == 'notice' ? 'success' : 'danger'} text-#{name.to_s == 'notice' ? 'success' : 'danger'} fade show remove-close-icon"
         role="alert" 
       ]
         button.btn-close aria-label="Close" data-bs-dismiss="alert" type="button" 
+          svg.feather.feather-x.fill-white.text-success.feather-sm xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            line x1="18" y1="6" x2="6" y2="18"
+            line x1="6" y1="6" x2="18" y2="18"
 
-        .d-flex.align-items-center.font-weight-medium
-         i.text-danger.fill-white.feather-sm.me-2 data-feather="info" = message
-
+        .d-flex.align-items-center.font-weight-medium.me-3.me-md-0
+          svg.feather.feather-info.text-success.fill-white.feather-sm.me-2 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            circle cx="12" cy="12" r="10"
+            line x1="12" y1="16" x2="12" y2="12"
+            line x1="12" y1="8" x2="12" y2="8"
+          = message
